@@ -14,10 +14,10 @@ interface HobbyProps {     //Interface tillåter beskrivning av vilka props komp
 const Book = ({ name, author, year, read }: HobbyProps) => {
     return (
         <div className="book">
-            <h2>Title: {name}</h2>
-            <p>Författare: {author}</p>
-            <p>Utgivningsår: {year}</p>
-            <p>Läst: {read ? "Läst" : "Ej läst"}</p>
+            <h2><strong>Title:</strong> {name}</h2>
+            <p><strong>Författare:</strong> {author}</p>
+            <p><strong>Utgivningsår:</strong> {year}</p>
+            <p><strong>Läst:</strong> {read ? "Läst" : "Ej läst"}</p>
         </div>
     );
 }
@@ -27,9 +27,11 @@ const Book = ({ name, author, year, read }: HobbyProps) => {
 function Hobby() {
 
     const hobbyArr: HobbyProps[] = [
-        { name: "Bok", author: "författare", year: 1979, read: true },
-        { name: "Bok", author: "författare", year: 1979, read: true },
-        { name: "Bok", author: "författare", year: 1979, read: true }
+        { name: "Profeten och Idioten", author: "Jonas Jonasson", year: 2022, read: true },
+        { name: "Analfabeten som kunde räkna", author: "Jonas Jonasson", year: 2013, read: true },
+        { name: "Hundraåringen som klev ut genom fönstret och försvann", author: "Jonas Jonasson", year: 2009, read: true },
+        { name: "Hundraettåringen som tänkte att han tänkte för mycket (2018)", author: "Jonas Jonasson", year: 2018, read: false },
+        { name: "Mördar-Anders och hans vänner (samt en och annan ovän)", author: "Jonas Jonasson", year: 2015, read: false }
     ];
 
     return (

@@ -18,3 +18,20 @@ body, html{
   ul{
     list-style-type: none;
   }
+
+  .banner{
+    max-width:100%;
+  }
+
+  .heroImg{
+    width:100vw;
+    height:auto;
+  }
+
+  .footer{
+    background-color: #282c34;
+    color: white;            
+    text-align: center; 
+    padding: 1em 0;          
+    width: 100%;             
+  }

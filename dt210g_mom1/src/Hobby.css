@@ -18,3 +18,52 @@
         list-style-type: none;
     }
    
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .book {
+        width: 50vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .book {
+        width: 80vw; 
+        padding:0.5em;
+    }
+
+    ul{
+        padding:0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .book {
+        width: 80vw; 
+        padding:0.5em;
+        text-align: center;
+    }
+
+    ul{
+        padding:0;
+    }
+
+    h1{
+        font-size:3em;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1{
+        font-size:4em;
+    }
+
+    h2{
+        font-size:2em;
+    }
+
+    p{
+        font-size:1.3em;
+    }
+}
