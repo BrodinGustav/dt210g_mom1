@@ -11,6 +11,10 @@ function App() {
         <Title name="Min titel" />
       </div>
 
+      <div className="banner">
+        <img src="" alt="hero-banner"></img>
+      </div>
+
     
       <Hobby />
     </>
