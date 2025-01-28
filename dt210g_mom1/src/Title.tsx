@@ -6,7 +6,6 @@ interface TitleProps {     //Interface tillåter beskrivning av vilka props komp
 
 
 
-
 const Title = ({ name }: TitleProps) => {
     return (
         <div className="title">
@@ -15,4 +14,6 @@ const Title = ({ name }: TitleProps) => {
     );
 }
 
+
+//Skickar titel som prop till komponent
 export default Title;
