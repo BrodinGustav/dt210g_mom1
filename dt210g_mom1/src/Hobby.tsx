@@ -10,7 +10,7 @@ interface HobbyProps {     //Interface tillåter beskrivning av vilka props komp
 }
 
 
-//Komponent som tar emot props
+//Komponent för enskild bok som tar emot props.
 const Book = ({ name, author, year, read }: HobbyProps) => {
     return (
         <div className="book">
@@ -38,6 +38,7 @@ function Hobby() {
         <div>
             <ul>
                 {
+                    //Renderar listan 
                     hobbyArr.map((hobby, index) => (
                             <li key={index}>
                                 <Book name={hobby.name} author={hobby.author} year={hobby.year} read={hobby.read} />
